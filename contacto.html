@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · Hormilla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,800;1,500&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <nav class="menu" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="huertas.html">Huertas cercanas</a>
+      <a href="contacto.html" aria-current="page">Contacto</a>
+    </nav>
+    <div class="logos">
+      <img class="icono" src="img/icono-hormilla.png" alt="Logo de Hormilla: una hormiga sosteniendo un brote">
+      <img class="nombre" src="img/logo-hormilla.png" alt="Hormilla">
+    </div>
+  </header>
+
+  <div class="contenedor una-columna">
+    <main>
+      <p class="migas">Contacto</p>
+      <h1>Escribinos</h1>
+      <p class="bajada">Contanos si querés conocer una huerta, sumarte o proponer una nueva en tu barrio.</p>
+
+            <form action="mailto:hormilla@gmail.com" method="post" enctype="text/plain">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required autocomplete="name">
+        </div>
+        <div>
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div>
+          <label for="barrio">Tu barrio</label>
+          <input type="text" id="barrio" name="barrio">
+        </div>
+        <div>
+          <label for="motivo">¿Qué querés hacer?</label>
+          <select id="motivo" name="motivo">
+            <option>Quiero conocer una huerta</option>
+            <option>Quiero sumarme como voluntario/a</option>
+            <option>Quiero proponer una huerta en mi barrio</option>
+            <option>Otra consulta</option>
+          </select>
+        </div>
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <button class="boton" type="submit">Enviar mensaje</button>
+      </form>
+
+      <div class="datos">
+        <p><strong>Correo:</strong> hormilla@gmail.com</p>
+        <p><strong>Instagram:</strong> @Hormillarg</p>
+        <p><strong>Zona:</strong> Buenos Aires, Argentina</p>
+      </div>
+
+      <img class="logo-final" src="img/logo-hormilla.png" alt="Hormilla">
+    </main>
+  </div>
+
+  <footer class="pie">
+    <img src="img/icono-hormilla.png" alt="">
+    <p>Hormilla · Huertas ecológicas vecinales</p>
+    <p><a href="index.html" style="color:inherit">Volver al inicio</a></p>
+  </footer>
+
+</body>
+</html>
